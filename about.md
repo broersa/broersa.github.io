@@ -4,6 +4,4 @@ title: About
 permalink: /about/
 ---
 
-The books I read:
-
-{% include goodreads.html %}
+Welcome to my blog where I try to show things that keep me busy.
