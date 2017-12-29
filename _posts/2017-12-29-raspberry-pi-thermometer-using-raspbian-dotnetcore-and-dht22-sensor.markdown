@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Raspberry Pi Thermometer using Raspbian DotNetCore and DHT22 sensor"
-date:   2017-12-28
+date:   2017-12-29
 categories: dotnetcore
 ---
 # Install raspbian
