@@ -303,7 +303,7 @@ uti     x
 ver     1.0
 ```
 
-Comment are welcome via my twitter account.
+Comments are welcome via my twitter account.
 
 The code can be found on my github:
 [https://github.com/broersa/Com.Bekijkhet.MySwashbuckleAADWebApi](https://github.com/broersa/Com.Bekijkhet.MySwashbuckleADDWebApi)
