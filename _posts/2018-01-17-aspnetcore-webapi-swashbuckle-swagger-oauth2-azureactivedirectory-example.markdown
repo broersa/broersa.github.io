@@ -237,7 +237,7 @@ services.AddSwaggerGen(c =>
         TokenUrl = "https://login.microsoftonline.com/< tenantid >/oauth2/token"
     });
 });
-
+```
 And replace the following in the Configure method:
 
 ``` csharp
@@ -276,7 +276,7 @@ Next we get the question to set our definitive password. After that the applicat
 
 Now we are signed in and we can make the secure call via the swagger UI.
 
-![Add AAD User]({{ "/assets/20180117swaggerauth4.png" | absolute_url }})
+![Add AAD User]({{ "/assets/20180117swaggerauth5.png" | absolute_url }})
 
 Also the claims are printed by the application:
 
