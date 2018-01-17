@@ -22,7 +22,7 @@ Now listening on: http://localhost:5000
 Application started. Press Ctrl+C to shut down.
 ```
 
-![Add AAD User]({{ "/assets/20180117noauth.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117noauth.png" | absolute_url }})
 
 It works without authentication.
 
@@ -32,9 +32,9 @@ We have to create some Active Directory objects that we use in this example.
 
 First we create a user. We go to the active directory portal and add a user:
 
-![Add AAD User]({{ "/assets/20180117adduser.jpg" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117adduser.jpg" | absolute_url }})
 
-![Add AAD User]({{ "/assets/20180117adduser2.jpg" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117adduser2.jpg" | absolute_url }})
 
 Remember the username and the temporary password. I will refer to them as < aadusername > and < aaduserpassword > in this blog.
 
@@ -45,11 +45,11 @@ Click Create.
 
 We also need two Active Directory App Registrations
 
-![Add AAD App Registration]({{ "/assets/20180117addappreg.jpg" | absolute_url }}){:height="300px"}
+![Add AAD App Registration]({{ "/assets/20180117addappreg.jpg" | absolute_url }})
 
 First add the client application:
 
-![Add AAD App Registration]({{ "/assets/20180117addappreg2.jpg" | absolute_url }}){:height="300px"}
+![Add AAD App Registration]({{ "/assets/20180117addappreg2.jpg" | absolute_url }})
 
 Click Create.
 
@@ -63,11 +63,11 @@ Create a Key, name it mykey set the duration to Never Expires and click on Save.
 
 Now click on the Manifest button and edit the selected line as is in the image:
 
-![Add AAD App Registration]({{ "/assets/20180117addappreg4.jpg" | absolute_url }}){:height="300px"}
+![Add AAD App Registration]({{ "/assets/20180117addappreg4.jpg" | absolute_url }})
 
 Now add the webapi application:
 
-![Add AAD App Registration]({{ "/assets/20180117addappreg3.jpg" | absolute_url }}){:height="300px"}
+![Add AAD App Registration]({{ "/assets/20180117addappreg3.jpg" | absolute_url }})
 
 Open the application.
 
@@ -79,17 +79,17 @@ Click on Properties and note down the App ID URI as < webapiresourceid >
 
 Now go back to mydemoapp and grant permissions of this application to the mywebapi application:
 
-![Add AAD App Registration]({{ "/assets/20180117addappreg5.jpg" | absolute_url }}){:height="300px"}
+![Add AAD App Registration]({{ "/assets/20180117addappreg5.jpg" | absolute_url }})
 
 Follow the steps and click Create.
 
-![Add AAD App Registration]({{ "/assets/20180117addappreg6.jpg" | absolute_url }}){:height="300px"}
+![Add AAD App Registration]({{ "/assets/20180117addappreg6.jpg" | absolute_url }})
 
 Set the options as the image and click Select. Than click Done.
 
 Now go to the Active Directory main page and select Properties and note down the Directory ID as < tenantid >
 
-![Add AAD User]({{ "/assets/20180117tenant.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117tenant.png" | absolute_url }})
 
 Ok so far so good.
 
@@ -166,7 +166,7 @@ Now listening on: http://localhost:5000
 Application started. Press Ctrl+C to shut down.
 ```
 
-![Add AAD User]({{ "/assets/20180117auth.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117auth.png" | absolute_url }})
 
 We get an error...
 
@@ -212,7 +212,7 @@ Application started. Press Ctrl+C to shut down.
 
 Check the url: http://localhost:5000/swagger
 
-![Add AAD User]({{ "/assets/20180117swagger.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117swagger.png" | absolute_url }})
 
 When we try the /api/Values we get the same 401 error.
 
@@ -263,20 +263,20 @@ Application started. Press Ctrl+C to shut down.
 
 And go to the swagger endpoint: http://localhost:5000/swagger we see an Authorize button. When we click on this butten we get a popup:
 
-![Add AAD User]({{ "/assets/20180117swaggerauth.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117swaggerauth.png" | absolute_url }})
 
 Select read and write and click on Authorize. Now we get a login screen from Azure Active Directory. Here we can enter our created user < aadusername > and authorize with the temporary password < aaduserpassword >. Sorry for the Dutch prompts.
 
-![Add AAD User]({{ "/assets/20180117swaggerauth2.png" | absolute_url }}){:height="300px"}
-![Add AAD User]({{ "/assets/20180117swaggerauth3.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117swaggerauth2.png" | absolute_url }})
+![Add AAD User]({{ "/assets/20180117swaggerauth3.png" | absolute_url }})
 
 Next we get the question to set our definitive password. After that the application asks our permission press Accept.
 
-![Add AAD User]({{ "/assets/20180117swaggerauth4.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117swaggerauth4.png" | absolute_url }})
 
 Now we are signed in and we can make the secure call via the swagger UI.
 
-![Add AAD User]({{ "/assets/20180117swaggerauth4.png" | absolute_url }}){:height="300px"}
+![Add AAD User]({{ "/assets/20180117swaggerauth4.png" | absolute_url }})
 
 Also the claims are printed by the application:
 
