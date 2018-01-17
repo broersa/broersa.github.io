@@ -216,7 +216,7 @@ Check the url: http://localhost:5000/swagger
 
 When we try the /api/Values we get the same 401 error.
 
-# Add the AAD Oath2 to the mix
+# Add the AAD Oauth2 to the mix
 
 Change the Startup.cs and replace in the ConfigureServices method the previous added with this:
 
