@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AspNetCore WebApi, Swashbuckle Swagger, OAuth2 AzureActiveDirectory example"
-date:   2017-01-17
+date:   2018-01-17
 categories: dotnetcore
 ---
 # Create the AspNetCore WebApi
